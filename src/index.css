@@ -1,3 +1,16 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Junge&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Junge&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 
+@theme {
+    --color-crema: #F4E1C1;
+    --color-beige: #FBF4E3;
+    --color-marron: #D4A574;
+    --color-naranja: #F0A76C;
+    --color-vino: #B34A3E;
+    --font-logo: "DM Serif Text",serif; 
+    --font-titulos: "junge",serif; 
+    --font-textos: "jost",serif;
 
+  }
