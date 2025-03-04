@@ -5,7 +5,7 @@ export default function App()
 {
   return (
     <div>
-      <Banner></Banner>
+      <Banner/>
     </div>
   );
 }
