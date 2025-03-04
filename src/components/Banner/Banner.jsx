@@ -31,7 +31,7 @@ const images = [
   
         {/* Texto sobre las imágenes */}
         <div className="fixed inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-40">
-          <h1 className="text-4xl font-bold">¡Cuando el antojo llama, Caprice responde!</h1>
+          <h1 className="text-5xl font-bold">¡Cuando el antojo llama, Caprice responde!</h1>
         </div>
       </div>
     );
