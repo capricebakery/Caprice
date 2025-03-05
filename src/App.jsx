@@ -6,7 +6,9 @@ export default function App() {
   return (
     <div>
       <Header/>
-      <main><Banner/></main>
+      <main>
+        <Banner/>
+      </main>
       <Footer/>
     </div>
   );

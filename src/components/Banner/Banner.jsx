@@ -19,19 +19,21 @@ const images = [
     }, []);
   
     return (
-      <div className="relative w-full h-[500px] overflow-hidden">
+
+      <div className="relative w-full min-h-screen overflow-hidden z-0">
         {/* Contenedor del carrusel */}
         <div className="w-full h-full">
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex}`}
-            className="fixed w-full h-full object-cover transition-opacity duration-500"
+            className="absolute w-full h-full object-cover transition-opacity duration-500"
           />
         </div>
+        
   
         {/* Texto sobre las imágenes */}
-        <div className="fixed inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-40">
-          <h1 className="text-5xl font-bold">¡Cuando el antojo llama, Caprice responde!</h1>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
+          <h1 className="text-5xl font-titulos">¡Cuando el antojo llama, Caprice responde!</h1>
         </div>
       </div>
     );

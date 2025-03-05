@@ -19,7 +19,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className= {`fixed top-0 left-0 w-full bg-vino p-4 flex items-center justify-between transition-transform duration-300 ${
+    <header className= {`fixed top-0 left-0 w-full z-10 bg-vino p-4 flex items-center justify-between transition-transform duration-300 ${
       showHeader ? "translate-y-0" : "-translate-y-full"}`}>
       <nav>
         <ul className="flex gap-4 text-white font-textos">
