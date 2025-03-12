@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Junge&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Junge&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  @apply bg-crema; 
+}
+
 @theme {
     --color-crema: #F4E1C1;
     --color-beige: #FBF4E3;
