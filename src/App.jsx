@@ -6,6 +6,7 @@ import Menu from "./components/Menu/Menu.jsx";
 import Secciones from "./components/Secciones/Secciones.jsx"
 import AppRoutes from "./routes.jsx"
 import SobreNosotros from "./components/SobreNosotros/SobreNosotros.jsx";
+import Pedidos from "./components/Pedidos/Pedidos.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Secciones/>
           <Menu/>
           <SobreNosotros/>
+          <Pedidos/>
           <AppRoutes/>
         </main>
         <Footer/>
