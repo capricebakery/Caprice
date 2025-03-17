@@ -5,7 +5,7 @@ const Secciones = () => {
     ];
   
     const recientesHorno = [
-      { src: "/img/recientes1.png", nombre: "Majicones" },
+      { src: "/img/recientes1.png", nombre: "Mojicones" },
       { src: "/img/recientes2.png", nombre: "Merengones" },
     ];
   
