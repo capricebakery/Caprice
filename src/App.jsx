@@ -4,9 +4,6 @@ import Footer from "./components/Footer/Footer.jsx";
 import AppRoutes from "./routes.jsx"
 import ScrollToTop from "./scrolltop.jsx";
 
-
-
-
 export default function App() {
   return (
     <BrowserRouter>
