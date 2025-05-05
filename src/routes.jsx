@@ -6,6 +6,8 @@ import Panaderia from "./pages/Panaderia.jsx";
 import Pasabocas from "./pages/Pasabocas.jsx";
 import Postres from "./pages/Postres.jsx";
 import Adicionales from "./pages/Adicionales.jsx";
+import SobreNosotros from "./components/SobreNosotros/SobreNosotros.jsx";
+import Pedidos from "./components/Pedidos/Pedidos.jsx";
 
 
 const AppRoutes = () => {
@@ -18,6 +20,8 @@ const AppRoutes = () => {
                 <Route path="/pasabocas" element={<Pasabocas/>}/>
                 <Route path="/postres" element={<Postres/>}/>
                 <Route path="/adicionales" element={<Adicionales/>}/>
+                <Route path="/SobreNosotros" element={<SobreNosotros/>}/>
+                <Route path="/Pedidos" element={<Pedidos/>}/>
             </Routes>
     );
 };

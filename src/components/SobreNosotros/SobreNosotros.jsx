@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const SobreNosotros = () => {
 return (
-    <section  className="w-350 flex md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
+    <section id="SobreNosotros"  className="w-350 flex md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
                         mx-auto my-20 px-40 rounded-[80px] shadow-lg overflow-visible">
         <motion.img
           src="/img/chef.png" 

@@ -1,7 +1,7 @@
 
 const Pedidos = () => {
     return (
-        <section className="flex justify-center w-auto mx-auto my-20 px-40">
+        <section id="Pedido" className="flex justify-center w-auto mx-auto my-20 px-40">
             <div className="w-auto mx-5 grid grid-cols-2 gap-50">
                 {/* img galleta  */}
                 <div className="bg-[#EBEBEB] flex justify-center items-center rounded-full shadow-md shadow-black/35 h-100 w-100">

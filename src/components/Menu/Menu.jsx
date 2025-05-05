@@ -9,7 +9,7 @@ const Menu = () => {
 
     return (
 
-            <div className="relative flex flex-col justify-center items-center py-3">
+            <div id="Menu" className="relative flex flex-col justify-center items-center py-3">
                 <button onClick={() => setMenuOpen(!menuOpen)} className=" bg-vino text-white w-40 py-3 rounded-lg font-textos hover:bg-naranja">
                     MENÚ
                 </button>
