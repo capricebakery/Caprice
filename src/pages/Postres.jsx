@@ -45,7 +45,7 @@ const Postres = () => {
                                         <img className="w-[300px] hover:scale-120 shadow-lg shadow-black/50 rounded-[50px]" src={item.src} alt={item.titulo} />
                                     </div>
                                     <ul className="list-disc font-textos text-[35px] mt-5">{item.titulo}
-                                        {item.item1 && <li className="font-textos text-[20px] ml-12">{item.item1}</li>}
+                                        {item.item1 && <li className="font-textos text-[20px] ml-12 mt-8">{item.item1}</li>}
                                         {item.item2 && <li className="font-textos text-[20px] ml-12">{item.item2}</li>}
                                         {item.item3 && <li className="font-textos text-[20px] ml-12">{item.item3}</li>}
                                     </ul>
@@ -67,7 +67,7 @@ const Postres = () => {
                                         <img className="w-[300px] hover:scale-120 shadow-lg shadow-black/50 rounded-[50px]" src={item.src} alt={item.titulo} />
                                     </div>
                                     <ul className="list-disc font-textos text-[35px] mt-5">{item.titulo}
-                                        {item.item1 && <li className="font-textos text-[20px] ml-12">{item.item1}</li>}
+                                        {item.item1 && <li className="font-textos text-[20px] ml-12 mt-8">{item.item1}</li>}
                                         {item.item2 && <li className="font-textos text-[20px] ml-12">{item.item2}</li>}
                                         {item.item3 && <li className="font-textos text-[20px] ml-12">{item.item3}</li>}
                                     </ul>
@@ -77,7 +77,7 @@ const Postres = () => {
                     </div>
                     <div> {/* Seccion Brownies y merengues*/}
                         <div className="flex items-center mb-20">
-                            <h2 className="font-titulos text-[50px] px-5">Seccion Brownies y merengues</h2>
+                            <h2 className="font-titulos text-[50px] px-5">Brownies y merengues</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 
@@ -89,7 +89,7 @@ const Postres = () => {
                                         <img className="w-[300px] hover:scale-120 shadow-lg shadow-black/50 rounded-[50px]" src={item.src} alt={item.titulo} />
                                     </div>
                                     <ul className="list-disc font-textos text-[35px] mt-5">{item.titulo}
-                                        {item.item1 && <li className="font-textos text-[20px] ml-12">{item.item1}</li>}
+                                        {item.item1 && <li className="font-textos text-[20px] ml-12 mt-8">{item.item1}</li>}
                                         {item.item2 && <li className="font-textos text-[20px] ml-12">{item.item2}</li>}
                                         {item.item3 && <li className="font-textos text-[20px] ml-12">{item.item3}</li>}
                                     </ul>
