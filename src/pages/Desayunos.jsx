@@ -82,25 +82,25 @@ const Desayunos = () => {
         <div>
             <section className=" relative w-auto flex md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
                         m-20 rounded-[80px] shadow-lg overflow-visible">
-                <div className=" px-10">
-                    <h1 className="font-titulos text-[100px]">Desayunos</h1>
-                    <p className="font-titulos text-[30px] mt-4 max-w-md">La mejor manera de inciar el dia es digustando uno de nuestros desayunos Caprice</p>
+                <div className="px-10 py-30">
+                    <h1 className="font-titulos text-[150px]">Desayunos</h1>
+                    <p className="font-textos text-[30px] mt-4 ">La mejor manera de inciar el día es degustando uno de nuestros desayunos Caprice</p>
                 </div>
-                <img className="absolute top-0 right-0 transform translate-x-20 -translate-y-10 w-[680px]" src="/img/pagedesayunos.png" alt="desayunos"/>
+                <img className="pt-25 w-[800px]" src="/img/pagedesayunos.png" alt="desayunos"/>
             </section>
-            <h2 className="flex justify-center font-titulos text-[30px] mt-40 mb-20">Elije a tu gusto</h2>
+            <h2 className="flex justify-center font-textos text-[40px] mt-40 mb-20">Elige a tu gusto</h2>
             <section>
                 <div>
                     <div>
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos text-[50px] px-5">Ejecutivo</h2>
+                            <h2 className="font-titulos font-bold text-[50px] px-5">Ejecutivo</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4 "></div>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mb-20">
                             {Ejecutivo.map((item,index) => (
                                 <div key={index} className="ml-20 flex flex-col justify-between gap-5">
-                                    <img className="w-[300px] hover:scale-120 rounded-[40px] shadow-2xl" src={item.src} alt={item.title}/>
-                                    <h3 className="font-textos text-[35px] mt-5">{item.title}</h3>
+                                    <img className="w-[300px] hover:scale-120 rounded-[50px] shadow-lg shadow-black/50" src={item.src} alt={item.title}/>
+                                    <h3 className="font-titulos text-[35px] mt-5">{item.title}</h3>
                                     <ul className="list-disc ml-10 font-textos text-[20px]">
                                         {item.pot1 && <li>{item.pot1}</li>}
                                         {item.pot2 && <li>{item.pot2}</li>}
@@ -113,14 +113,14 @@ const Desayunos = () => {
                     </div>
                     <div>
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos text-[50px] px-5">Escolar</h2>
+                            <h2 className="font-titulos font-bold text-[50px] px-5">Escolar</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4 "></div>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mb-20">
                             {Escolar.map((item,index) => (
                                 <div key={index} className="ml-20 flex flex-col justify-between gap-5">
-                                    <img className="w-[300px] hover:scale-120 rounded-[40px] shadow-2xl" src={item.src} alt={item.title}/>
-                                    <h3 className="font-textos text-[35px] mt-5">{item.title}</h3>
+                                    <img className="w-[300px] hover:scale-120 rounded-[50px] shadow-lg shadow-black/50" src={item.src} alt={item.title}/>
+                                    <h3 className="font-titulos text-[35px] mt-5">{item.title}</h3>
                                     <ul className="list-disc ml-10 font-textos text-[20px]">
                                         {item.pot1 && <li>{item.pot1}</li>}
                                         {item.pot2 && <li>{item.pot2}</li>}
@@ -133,14 +133,14 @@ const Desayunos = () => {
                     </div>
                     <div>
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos text-[50px] px-5">Especial</h2>
+                            <h2 className="font-titulos font-bold text-[50px] px-5">Especial</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4 "></div>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mb-20">
                             {Especial.map((item,index) => (
                                 <div key={index} className="ml-20 flex flex-col justify-between gap-5">
-                                    <img className="w-[300px] hover:scale-120 rounded-[40px] shadow-2xl" src={item.src} alt={item.title}/>
-                                    <h3 className="font-textos text-[35px] mt-5">{item.title}</h3>
+                                    <img className="w-[300px] hover:scale-120 rounded-[50px] shadow-lg shadow-black/50" src={item.src} alt={item.title}/>
+                                    <h3 className="font-titulos text-[35px] mt-5">{item.title}</h3>
                                     <ul className="list-disc ml-10 font-textos text-[20px]">
                                         {item.pot1 && <li>{item.pot1}</li>}
                                         {item.pot2 && <li>{item.pot2}</li>}

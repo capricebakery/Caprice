@@ -48,7 +48,7 @@ const Header = () => {
       </nav>
       <div className="flex items-center gap-2">
         <h1 className="text-white text-4xl font-bold font-logo">Caprice</h1>
-        <img src="/2bfd5b66401be85952ea3c25116be1c5-removebg-preview.PNG" alt="Logo de la panadería" className="h-12 w-auto" />
+        <img src="/2bfd5b66401be85952ea3c25116be1c5-removebg-preview.PNG" alt="Logo de la panadería" className="h-auto w-12" />
       </div>
     </header>
   );
