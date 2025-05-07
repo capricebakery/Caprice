@@ -9,10 +9,13 @@ const Menu = () => {
 
     return (
 
-            <div id="Menu" className="relative flex flex-col justify-center items-center py-3">
-                <button onClick={() => setMenuOpen(!menuOpen)} className=" bg-vino text-white w-40 py-3 rounded-lg font-textos hover:bg-naranja">
-                    MENÚ
-                </button>
+            <div id="Menu" className="relative flex flex-col justify-center items-center py-3 my-20 bg-[url(/img/fondomenu.jpeg)] bg-center h- ">
+                <div className="flex justify-center items-center">
+                    <img className="z-0" src="/img/recuadromenu.PNG" alt="recuadro menu"/>
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="absolute z-1 text-marron w-auto py-3 text-5xl rounded-lg font-titulos hover:text-yellow-800">
+                        MENÚ
+                    </button>
+                </div>
 
                 {menuOpen && (
                 <div className="mt-5 mx-5 w-auto bg-[url(/img/fondo_menu.png)] bg-no-repeat bg-cover bg-left shadow-lg rounded-[6rem] p-10 grid grid-cols-2 gap-10 pr-30">
@@ -23,9 +26,9 @@ const Menu = () => {
                         <div className="flex items-center justify-between pb-2">
                             <div>
                                 <button onClick={() => navigate("/desayunos")}>
-                                    <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Desayunos</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Desayunos</h2>
                                 </button>
-                                <ul className="list-disc ml-5">
+                                <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Ejecutivo</li>
                                     <li className="text-[20px]">Escolar</li>
                                     <li className="text-[20px]">Especial</li>
@@ -43,9 +46,9 @@ const Menu = () => {
                             </div>
                             <div>
                                 <button onClick={() => navigate("/Pasteles")}>
-                                    <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pasteles y tortas</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pasteles y tortas</h2>
                                 </button>
-                                <ul className="list-disc ml-5">
+                                <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Cumpleaños</li>
                                     <li className="text-[20px]">Personalizadas</li>
                                     <li className="text-[20px]">Pies</li>
@@ -58,9 +61,9 @@ const Menu = () => {
                         <div className="flex items-center justify-between pb-2">
                             <div>
                                 <button onClick={() => navigate("/Panaderia")}>
-                                    <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Panaderia</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Panadería</h2>
                                 </button>
-                                <ul className="list-disc ml-5">
+                                <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Hojaldres</li>
                                     <li className="text-[20px]">Dulces</li>
                                     <li className="text-[20px]">Granos</li>
@@ -79,9 +82,9 @@ const Menu = () => {
                             </div>
                             <div className="flex flex-col ">
                                 <button onClick={() => navigate("/Postres")}>
-                                    <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Postres</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Postres</h2>
                                 </button>
-                                <ul className="list-disc ml-5">
+                                <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Galletas</li>
                                     <li className="text-[20px]">Cupcakes</li>
                                     <li className="text-[20px]">Brownies</li>
@@ -94,9 +97,9 @@ const Menu = () => {
                         <div className="flex items-center justify-between pb-2">
                             <div>
                                 <button onClick={() => navigate("/Pasabocas")}>
-                                    <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pasabocas</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pasabocas</h2>
                                 </button>
-                                <ul className="list-disc ml-5">
+                                <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Galletas saladas</li>
                                     <li className="text-[20px]">Bolovanes</li>
                                     <li className="text-[20px]">Palitos de queso</li>
@@ -109,7 +112,7 @@ const Menu = () => {
                         </div>
 
                         <div>
-                            <button onClick={() => setAdicionalesOpen(!adicionalesOpen)}className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">
+                            <button onClick={() => setAdicionalesOpen(!adicionalesOpen)}className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">
                                 Adicionales
                             </button>
 
@@ -121,10 +124,8 @@ const Menu = () => {
                                         <img src="/img/pizza.png" className="w-43 h-auto " alt="adicionales" />
                                     </div>
                                     <div>
-                                        <button onClick={() => navigate("/Adicionales")}>
-                                            <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pizza</h2>
-                                        </button>
-                                        <ul className="list-disc ml-5">
+                                        <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pizza</h2>
+                                        <ul className="font-textos list-disc ml-5">
                                             <li className="text-[20px]">Pepperoni</li>
                                             <li className="text-[20px]">Hawaiana</li>
                                             <li className="text-[20px]">Pollo con champiñones</li>
@@ -138,10 +139,8 @@ const Menu = () => {
                                 {/* Sección de Lasagna */}
                                 <div className="flex items-center justify-between pb-2">
                                     <div>
-                                        <button onClick={() => navigate("/Adicionales")}>
-                                            <h2 className="font-textos text-[35px] border-b mb-8 text-vino hover:text-naranja">Lasagna</h2>
-                                        </button>
-                                        <ul className="list-disc ml-5"> 
+                                        <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Lasagna</h2>
+                                        <ul className="font-textos list-disc ml-5"> 
                                             <li className="text-[20px]">Boloñesa</li>
                                             <li className="text-[20px]">Atún</li>
                                             <li className="text-[20px]">Pollo</li>

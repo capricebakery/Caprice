@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 const SobreNosotros = () => {
 return (
-    <section id="SobreNosotros"  className="w-350 flex md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
-                        mx-auto my-20 px-40 rounded-[80px] shadow-lg overflow-visible">
+    <section id="SobreNosotros"  className="w-auto flex md:flex-row flex-col items-center h-138 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
+                        mx-30 my-40 px-40 rounded-[80px] shadow-lg overflow-visible">
         <motion.img
           src="/img/chef.png" 
           alt="Chef" 
-          className="mb-22 w-[140%] lg:w-[270%] sm:w-[120%] max-w-none"
+          className="mb-22 w-[450px] max-w-none"
           style={{ transform: "translateX(-70%)" }}
           initial={{ opacity: 0, x: -100 }}  // Comienza invisible y desplazado a la izquierda
           whileInView={{ opacity: 1, x: 0 }}

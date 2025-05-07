@@ -8,6 +8,7 @@ import Postres from "./pages/Postres.jsx";
 import Adicionales from "./pages/Adicionales.jsx";
 import SobreNosotros from "./components/SobreNosotros/SobreNosotros.jsx";
 import Pedidos from "./components/Pedidos/Pedidos.jsx";
+import NotFoundPage from "./components/NotFound/NotFound.jsx";
 
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
                 <Route path="/adicionales" element={<Adicionales/>}/>
                 <Route path="/SobreNosotros" element={<SobreNosotros/>}/>
                 <Route path="/Pedidos" element={<Pedidos/>}/>
+                <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
     );
 };
