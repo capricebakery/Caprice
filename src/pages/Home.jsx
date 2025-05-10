@@ -4,17 +4,16 @@ import Secciones from "../components/Secciones/Secciones.jsx"
 import SobreNosotros from "../components/SobreNosotros/SobreNosotros.jsx";
 import Pedidos from "../components/Pedidos/Pedidos.jsx";
 
-const Home = () => {
+
+
+export default function Home () {
     return (
         <div>
             <Banner/>
             <Secciones/>
             <Menu/>
             <SobreNosotros/>
-            <Pedidos/>  
+            <Pedidos/>
         </div>
-    )
-
+    );
 }
-
-export default Home;
