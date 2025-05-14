@@ -21,7 +21,7 @@ return (
           whileInView={{ opacity: 1, x: 0 }}  // Aparece y sube suavemente
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }} // Se retrasa un poco para mejor efecto
         >
-          <h2 className="text-[55px] font-bold font-titulos mb-7">Sobre nosotros</h2>
+          <h2 className="text-[55px] font-bold text-white font-titulos mb-7">Sobre nosotros</h2>
           <p className="text-gray-700 text-[20px] leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tellus nisl,
             id elementum nunc vulputate a. Donec id justo consectetur, eleifend odio molestie,
