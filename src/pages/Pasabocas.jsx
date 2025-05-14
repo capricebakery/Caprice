@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Pasabocas = () => {
     const galletas = [
         { src: "/img/galletasal.png", titulo:"Galletas saladas", item1:"", item2:"", item3:"", item4:""},
@@ -16,6 +19,27 @@ const Pasabocas = () => {
         {src: "/img/palitoqueso.png", titulo:"Palito de queso frito"},
         {src: "/img/palitoqueso2.png", titulo:"Palito de queso horneado"} 
     ]
+
+    const location = useLocation();
+
+    useEffect(() => {
+      const hash = location.hash.replace('#', '');
+      if (hash) {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [location]);
+
+    const normalizeId = (str) =>
+     str
+        .normalize("NFD")  
+        .replace(/[\u0300-\u036f]/g, "") 
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")     
+        .replace(/(^-|-$)/g, "");   
+
     return (
         <div>
             <section className="flex w-auto md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
@@ -33,7 +57,7 @@ const Pasabocas = () => {
                 <div>
                     <div>{/* Seccion Galletas*/}
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5" >Galletas saladas</h2>
+                            <h2 id={normalizeId("Galletas saladas")} className="font-titulos font-bold text-[50px] px-5" >Galletas saladas</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 
@@ -55,7 +79,7 @@ const Pasabocas = () => {
                     </div>
                     <div> {/* Seccion Cupcakes*/}
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Volovanes</h2>
+                            <h2 id={normalizeId("Volovanes")} className="font-titulos font-bold text-[50px] px-5">Volovanes</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 
@@ -77,7 +101,7 @@ const Pasabocas = () => {
                     </div>
                     <div> {/* Seccion Brownies y merengues*/}
                         <div className="flex items-center mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Empanadas y palitos de queso</h2>
+                            <h2 id={normalizeId("Empanadas y palitos de queso")} className="font-titulos font-bold text-[50px] px-5">Empanadas y palitos de queso</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 

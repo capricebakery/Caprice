@@ -12,9 +12,12 @@ body {
     --color-beige: #FBF4E3;
     --color-marron: #D4A574;
     --color-naranja: #F0A76C;
-    --color-vino: #B34A3E;
+    --color-cafe: #AB7D48;
     --font-logo: "DM Serif Text",serif; 
     --font-titulos: "junge",serif; 
     --font-textos: "jost",serif;
-
   }
+
+text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}

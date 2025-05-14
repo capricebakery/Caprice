@@ -26,7 +26,7 @@ const Menu = () => {
                         <div className="flex items-center justify-between pb-2">
                             <div>
                                 <button onClick={() => navigate("/desayunos")}>
-                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Desayunos</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Desayunos</h2>
                                 </button>
                                 <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Ejecutivo</li>
@@ -46,7 +46,7 @@ const Menu = () => {
                             </div>
                             <div>
                                 <button onClick={() => navigate("/Pasteles")}>
-                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pasteles y tortas</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Pasteles y tortas</h2>
                                 </button>
                                 <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Cumpleaños</li>
@@ -61,7 +61,7 @@ const Menu = () => {
                         <div className="flex items-center justify-between pb-2">
                             <div>
                                 <button onClick={() => navigate("/Panaderia")}>
-                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Panadería</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Panadería</h2>
                                 </button>
                                 <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Hojaldres</li>
@@ -82,7 +82,7 @@ const Menu = () => {
                             </div>
                             <div className="flex flex-col ">
                                 <button onClick={() => navigate("/Postres")}>
-                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Postres</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Postres</h2>
                                 </button>
                                 <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Galletas</li>
@@ -97,7 +97,7 @@ const Menu = () => {
                         <div className="flex items-center justify-between pb-2">
                             <div>
                                 <button onClick={() => navigate("/Pasabocas")}>
-                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pasabocas</h2>
+                                    <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Pasabocas</h2>
                                 </button>
                                 <ul className="font-textos list-disc ml-5">
                                     <li className="text-[20px]">Galletas saladas</li>
@@ -112,7 +112,7 @@ const Menu = () => {
                         </div>
 
                         <div>
-                            <button onClick={() => setAdicionalesOpen(!adicionalesOpen)}className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">
+                            <button onClick={() => setAdicionalesOpen(!adicionalesOpen)}className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">
                                 Adicionales
                             </button>
 
@@ -124,7 +124,7 @@ const Menu = () => {
                                         <img src="/img/pizza.png" className="w-43 h-auto " alt="adicionales" />
                                     </div>
                                     <div>
-                                        <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Pizza</h2>
+                                        <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Pizza</h2>
                                         <ul className="font-textos list-disc ml-5">
                                             <li className="text-[20px]">Pepperoni</li>
                                             <li className="text-[20px]">Hawaiana</li>
@@ -139,7 +139,7 @@ const Menu = () => {
                                 {/* Sección de Lasagna */}
                                 <div className="flex items-center justify-between pb-2">
                                     <div>
-                                        <h2 className="font-titulos text-[35px] border-b mb-8 text-vino hover:text-naranja">Lasagna</h2>
+                                        <h2 className="font-titulos text-[35px] border-b mb-8 text-black hover:text-naranja">Lasagna</h2>
                                         <ul className="font-textos list-disc ml-5"> 
                                             <li className="text-[20px]">Boloñesa</li>
                                             <li className="text-[20px]">Atún</li>
