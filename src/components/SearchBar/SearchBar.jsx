@@ -43,7 +43,7 @@ export default function SearchBar() {
         onClick={handleSearch}
         className="bg-none text-black py-2 rounded w-6 absolute opacity-15 flex ml-50"
       >
-        <img src='/img/search.png'/>
+        <img src='/img/search.png' alt='Lupa'/>
       </button>
     </div>
   );

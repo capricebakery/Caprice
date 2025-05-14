@@ -9,7 +9,7 @@ const Pedidos = () => {
                 </div>
                 {/* info */}
                 <div className="flex flex-col justify-center items-center">
-                    <h2 className="font-titulos font-bold text-[45px] mb-10">Haz tu pedido aquí:</h2>
+                    <h2 className="font-titulos font-bold text-white text-[45px] mb-10">Haz tu pedido aquí:</h2>
                     <ul className="font-textos text-[14px] flex flex-col gap-7">
                          <li className="flex w-auto h-9 gap-7 items-center"><img src="/img/icon-whatsapp.png" alt="Iconon Whatsapp"/>329-911-3888</li>
                          <li className="flex w-auto h-9 gap-7 items-center"><img src="/img/icon-casa.png" alt="Iconon casa"/>Cra 127 D 89 - 23</li>
