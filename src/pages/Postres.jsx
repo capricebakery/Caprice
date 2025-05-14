@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Postres = () => {
     const galletas = [
         { src: "/img/galletas1.png", titulo:"Galletas:", item1:"Choco chips", item2:"Chocolate", item3:"Vainilla", item4:"Avena"},
@@ -16,6 +19,27 @@ const Postres = () => {
         {src: "/img/brownie2.png", titulo:"Brownies", item1:"Relleno", item2:"Cubiertas", item3:"Personalizados"},  
         {src:"/img/merengue.png", titulo:"Merengues", item1:"Italiano",item2:"Francés", item3:"Suizo"} 
     ]
+
+    const location = useLocation();
+
+    useEffect(() => {
+      const hash = location.hash.replace('#', '');
+      if (hash) {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [location]);
+
+    const normalizeId = (str) =>
+     str
+        .normalize("NFD")  
+        .replace(/[\u0300-\u036f]/g, "") 
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")     
+        .replace(/(^-|-$)/g, "");     
+
     return (
         <div>
             <section className="flex w-auto md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
@@ -33,7 +57,7 @@ const Postres = () => {
                 <div>
                     <div>{/* Seccion Galletas*/}
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5" >Galletas</h2>
+                            <h2  id={normalizeId("Galletas")} className="font-titulos font-bold text-[50px] px-5" >Galletas</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 
@@ -55,7 +79,7 @@ const Postres = () => {
                     </div>
                     <div> {/* Seccion Cupcakes*/}
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Cupcakes</h2>
+                            <h2  id={normalizeId("Cupcakes")} className="font-titulos font-bold text-[50px] px-5">Cupcakes</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 
@@ -77,7 +101,7 @@ const Postres = () => {
                     </div>
                     <div> {/* Seccion Brownies y merengues*/}
                         <div className="flex items-center mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Brownies y merengues</h2>
+                            <h2  id={normalizeId("Brownies y merengues")} className="font-titulos font-bold text-[50px] px-5">Brownies y merengues</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4"></div>
                         </div>
 

@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Pasteles = () => {
     const Cumpleaños = [
         {
@@ -77,6 +80,26 @@ const Pasteles = () => {
         }
     ]
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+    const normalizeId = (str) =>
+     str
+        .normalize("NFD")  
+        .replace(/[\u0300-\u036f]/g, "") 
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")     
+        .replace(/(^-|-$)/g, "");           
+
     return(
         <div>
             <section className=" relative w-auto flex md:flex-row flex-col items-center h-150 bg-linear-to-t from-[#F4E1C1] to-[#f7f2dc]
@@ -92,7 +115,7 @@ const Pasteles = () => {
                 <div>
                     <div>
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Cumpleaños</h2>
+                            <h2 id={normalizeId("Cumpleaños")} className="font-titulos font-bold text-[50px] px-5">Cumpleaños</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4 "></div>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mb-20">
@@ -112,7 +135,7 @@ const Pasteles = () => {
                     </div>
                     <div>
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Pies y Cheesecakes</h2>
+                            <h2 id={normalizeId("Pies y Cheesecakes")} className="font-titulos font-bold text-[50px] px-5">Pies y Cheesecakes</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4 "></div>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mb-20">
@@ -132,7 +155,7 @@ const Pasteles = () => {
                     </div>
                     <div>
                         <div className="flex items-center gap-5 mb-20">
-                            <h2 className="font-titulos font-bold text-[50px] px-5">Personalizadas</h2>
+                            <h2 id={normalizeId("Personalizadas")} className="font-titulos font-bold text-[50px] px-5">Personalizadas</h2>
                             <div className="w-full h-[2px] bg-gray-500 my-4 "></div>
                         </div>
                         <div className="grid grid-cols-3 gap-6 mb-20">

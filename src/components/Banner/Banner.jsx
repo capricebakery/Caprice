@@ -33,7 +33,7 @@ const images = [
   
         {/* Texto sobre las imágenes */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
-          <h1 className="text-5xl font-titulos">¡Cuando el antojo llama, Caprice responde!</h1>
+          <h1 className="text-5xl font-titulos" style={{ textShadow: '3px 3px 5px rgba(0, 0, 0, 10)' }}>¡Cuando el antojo llama, Caprice responde!</h1>
         </div>
       </div>
     );

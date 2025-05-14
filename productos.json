@@ -1,0 +1,28 @@
+{
+    "Desayunos": {
+      "Ejecutivo": ["Sandwich", "Mini Hamburguesas", "Pastel de carne"],
+      "Escolar": ["Muffin", "Fruta", "Yogurt"],
+      "Especial": ["Dia de la madre", "Decoraciones", "Globo y flores"]
+    },
+    "Pasteles": {
+      "Cumpleaños": ["Cubierta de crema", "Pastel Hombre araña", "fresas"],
+      "Pies y Cheesecakes": ["Pie de Frambuesa", "Cheesecake de Limon", "Cheesecake de Frutos rojos"],
+      "Personalizadas": ["Totoro", "Capibara", "Ferrero Roche"]
+    },
+    "panaderia": {
+      "Hojaldres": ["Pan Hojaldrado", "Corazones", "Pastel de Pollo"],
+      "Dulces": ["Pan de uvas pasas", "Roscones", "Churros rellenos"],
+      "Granos e Integrales": ["Mogolla Integral", "Pan de 7 granos", "Pan de maíz"]
+    },
+    "Postres": {
+      "Galletas": ["Choco chips", "Chocolate", "Vainilla","Herradura", "Rizada", "Grajeas","Personajes", "Figuras", "Personalizadas"],
+      "Cupcakes": ["Chocolate", "Vainilla", "Fresa", "Limón", "Mandarina", "Mora"],
+      "Brownies y Merengues": ["Brownie sencillo", "Relleno", "Cubiertas", "Italiano", "Francés", "Suizo"]
+    },
+    "Pasabocas": {
+      "Galletas saladas": ["Galletas integrales", "Galletas de ajonjolí"],
+      "Volovanes": ["Volovanes dulces", "Volovanes del mar"],
+      "Empanadas y palitos de queso": ["Pollo", "Jamón y queso", "Empanadas"]
+    }
+  }
+  
