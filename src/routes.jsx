@@ -11,6 +11,7 @@ import Pedidos from "./components/Pedidos/Pedidos.jsx";
 import NotFoundPage from "./components/NotFound/NotFound.jsx";
 
 
+
 const AppRoutes = () => {
     return (
             <Routes>
